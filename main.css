@@ -24,7 +24,7 @@ body {
   /* position: fixed; */
   width: 100%;
   top: 0;
-  z-index: 1;
+  /* z-index: 1; */
 }
 .nav-title {
   font-size: 2rem;
@@ -38,6 +38,7 @@ body {
   margin: 0 auto;
   width: 90vw;
 }
+/* hero */
 .hero {
   background: linear-gradient(rgba(97, 71, 42, 0.5), rgba(206, 151, 89, 0.5)),
     url(./img/bg-1.jpg) no-repeat center center/cover;
@@ -59,16 +60,6 @@ body {
 .hero-center p {
   max-width: 520px;
 }
-/* temp */
-.temp {
-  background: linear-gradient(
-    to right,
-    rgba(123, 234, 154, 0.4),
-    rgba(123, 234, 154, 0.6),
-    rgba(123, 234, 154, 0.9)
-  );
-  height: 100vh;
-}
 /* button */
 .hero-btn {
   display: inline-block;
@@ -83,16 +74,26 @@ body {
   /* cursor: pointer; */
   /* cursor: col-resize; */
 }
+/* temp */
+.temp {
+  background: linear-gradient(
+    to right,
+    rgba(123, 234, 154, 0.4),
+    rgba(123, 234, 154, 0.6),
+    rgba(123, 234, 154, 0.9)
+  );
+  height: 100vh;
+}
 
 /* media queries */
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1176px) {
   .hero {
     position: relative;
     background: linear-gradient(rgba(97, 71, 42, 0.5), rgba(216, 125, 20, 0.5));
     min-height: calc(100vh - 5rem);
   }
-  .hero-center {
+  /* .hero-center {
     position: absolute;
     text-align: center;
-  }
+  } */
 }
