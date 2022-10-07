@@ -1,0 +1,98 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+/* .container {
+  max-width: 1160px;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: #fff;
+} */
+/* navbar */
+.nav {
+  background: #222;
+  height: 5rem;
+  padding: 1rem 0;
+  position: sticky;
+  /* position: fixed; */
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.nav-title {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.nav-center {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 90vw;
+}
+.hero {
+  background: linear-gradient(rgba(97, 71, 42, 0.5), rgba(206, 151, 89, 0.5)),
+    url(./img/bg-1.jpg) no-repeat center center/cover;
+  min-height: calc(100vh - 5rem);
+}
+.hero-center {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 90vw;
+  padding: 5rem 0;
+  color: #fff;
+}
+.hero-center h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.75rem;
+}
+.hero-center p {
+  max-width: 520px;
+}
+/* temp */
+.temp {
+  background: linear-gradient(
+    to right,
+    rgba(123, 234, 154, 0.4),
+    rgba(123, 234, 154, 0.6),
+    rgba(123, 234, 154, 0.9)
+  );
+  height: 100vh;
+}
+/* button */
+.hero-btn {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  background: transparent;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  /* cursor: pointer; */
+  /* cursor: col-resize; */
+}
+
+/* media queries */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .hero {
+    position: relative;
+    background: linear-gradient(rgba(97, 71, 42, 0.5), rgba(216, 125, 20, 0.5));
+    min-height: calc(100vh - 5rem);
+  }
+  .hero-center {
+    position: absolute;
+    text-align: center;
+  }
+}
